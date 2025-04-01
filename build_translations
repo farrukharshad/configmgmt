@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [[ ${1} == "generate" ]]; then
+lupdate cpp/inc/guistrings.h -ts res/translations/configmgmt_en.ts res/translations/configmgmt_nl.ts res/translations/configmgmt_de.ts
+fi
+if [[ ${1} == "create" ]]; then
+	cd res/translations
+	linguist configmgmt_en.ts configmgmt_nl.ts configmgmt_de.ts 
+fi
+if [[ ${1} == "build" ]]; then
+	cd res/translations
+	lrelease configmgmt_en.ts
+	lrelease configmgmt_nl.ts
+	lrelease configmgmt_de.ts
+fi

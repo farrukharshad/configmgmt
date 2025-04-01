@@ -1,0 +1,83 @@
+ <!DOCTYPE RCC><RCC version="1.0">
+ <qresource prefix="/">
+
+    <!-- Fonts -->
+    <file alias="lucida.ttf">fonts/Lucida Grande.ttf</file>
+    <file alias="courier.ttf">fonts/Courier.ttf</file>
+
+    <!-- Translation Files -->
+    <file>translations/configmgmt_en.qm</file>
+    <file>translations/configmgmt_de.qm</file>
+    <file>translations/configmgmt_nl.qm</file>
+
+    <!-- Screens -->
+    <file alias="loader.qml">../qml/screens/loader.qml</file>
+    <file alias="main.qml">../qml/screens/main.qml</file>
+    <file alias="language.qml">../qml/screens/language.qml</file>
+    <file alias="function.qml">../qml/screens/function.qml</file>
+    <file alias="orientitation.qml">../qml/screens/orientitation.qml</file>
+    <file alias="sound.qml">../qml/screens/sound.qml</file>
+    <file alias="power.qml">../qml/screens/power.qml</file>
+    <file alias="netsettings.qml">../qml/screens/netsettings.qml</file>
+    <file alias="ipconfiginput.qml">../qml/screens/ipconfiginput.qml</file>
+    <file alias="wifi.qml">../qml/screens/wifi.qml</file>
+
+    <!-- Components -->
+    <file alias="ScreenHeader.qml">../qml/components/ScreenHeader.qml</file>
+    <file alias="MenuOption.qml">../qml/components/MenuOption.qml</file>
+    <file alias="IpInput.qml">../qml/components/IpInput.qml</file>
+    <file alias="Button.qml">../qml/components/Button.qml</file>
+    <file alias="BinaryConfigInput.qml">../qml/components/BinaryConfigInput.qml</file>
+    <!-- <file alias="WifiDetails.qml">../qml/components/WifiDetails.qml</file> -->
+    <file alias="WifiList.qml">../qml/components/WifiList.qml</file>
+    <!-- <file alias="CustomTextInput.qml">../qml/components/CustomTextInput.qml</file> -->
+    <!-- <file alias="WifiAuth.qml">../qml/components/WifiAuth.qml</file> -->
+    <file alias="Oskb.qml">../qml/components/Oskb.qml</file>
+    <file alias="OSKBButton.qml">../qml/components/OSKBButton.qml</file>
+    <!-- <file alias="WifiAuthentication.qml">../qml/components/WifiAuthentication.qml</file> -->
+
+    <!-- Images -->
+    <file alias="arrow.png">images/arrow.png</file>
+    <file alias="arrow_selected.png">images/arrow_selected.png</file>
+    <file alias="menu_selector_arrow.png">images/menu_selector_arrow.png</file>
+    <file alias="menu_selector_noarrow.png">images/menu_selector_noarrow.png</file>
+    <file alias="bg_ip.png">images/bg_ip.png</file>
+    <file alias="done_button.png">images/done_button.png</file>
+    <file alias="ip_tuple_selector.png">images/ip_tuple_selector.png</file>
+    <file alias="arrowdown.png">images/arrowdown.png</file>
+    <file alias="arrowup.png">images/arrowup.png</file>
+    <file alias="input-background.png">images/input-background.png</file>
+    <file alias="oskb_button.png">images/oskb_button.png</file>
+    <file alias="oskb_button_my.png">images/oskb_button_my.png</file>
+    <file alias="oskb_button_medium_my.png">images/oskb_button_medium_my.png</file>
+    <file alias="oskb_button_medium_2_my.png">images/oskb_button_medium_2_my.png</file>
+    <file alias="oskb_button_big_my.png">images/oskb_button_big_my.png</file>
+
+    <file alias="oskb_key_type_bg.png">images/oskb_key_type_bg.png</file>
+    <file alias="oskb_bg.png">images/oskb/bg.png</file>
+    <file alias="oskb_btn_big_bg_n.png">images/oskb/bigBtnBg.png</file>
+    <file alias="oskb_btn_big_bg_p.png">images/oskb/bigBtnBg_press.png</file>
+    <file alias="oskb_icn_del.png">images/oskb/delIcon.png</file>
+    <file alias="oskb_btn_done_n.png">images/oskb/doneBtnBg.png</file>
+    <file alias="oskb_btn_done_p.png">images/oskb/doneBtnBg_press.png</file>
+    <file alias="oskb_icn_done.png">images/oskb/doneIcon.png</file>
+    <file alias="oskb_icn_dot.png">images/oskb/dotIcon.png</file>
+    <file alias="oskb_input_box.png">images/oskb/entrybox.png</file>
+    <file alias="oskb_btn_medium_2_bg_n.png">images/oskb/mediumBtn2Bg.png</file>
+    <file alias="oskb_btn_medium_2_bg_p.png">images/oskb/mediumBtn2Bg_press.png</file>
+    <file alias="oskb_btn_medium_bg_n.png">images/oskb/mediumBtnBg.png</file>
+    <file alias="oskb_btn_medium_bg_p.png">images/oskb/mediumBtnBg_press.png</file>
+    <file alias="oskb_icn_mic.png">images/oskb/recIcon.png</file>
+    <file alias="oskb_icn_ret.png">images/oskb/returnIcon.png</file>
+    <file alias="oskb_icn_shift.png">images/oskb/shiftIcon.png</file>
+    <file alias="oskb_btn_small_bg_n.png">images/oskb/smallBtnBg.png</file>
+    <file alias="oskb_btn_small_bg_p.png">images/oskb/smallBtnBg_press.png</file>
+    <file alias="oskb_icn_space.png">images/oskb/spaceIcon.png</file>
+    <file alias="oskb_empty_1.png">images/spacer_1.png</file>
+    <file alias="oskb_empty_2.png">images/oskb/spacer_2.png</file>
+    <file alias="oskb_empty_3.png">images/oskb/spacer_3.png</file>
+    <file alias="oskb_icn_num.png">images/oskb/123.png</file>
+    <file alias="oskb_icn_alph.png">images/oskb/ABC.png</file>
+
+ </qresource>
+ </RCC>

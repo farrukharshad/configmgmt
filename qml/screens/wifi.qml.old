@@ -1,0 +1,69 @@
+
+//import QtQuick 1.1
+import QtQuick 1.0
+
+Item {
+    id: wifi_screen
+    width: 1920;
+    height: 1080;
+    focus: true;
+    property string currentScreen: "";
+
+    FontLoader {
+        id: lucida
+        source: "qrc:/lucida.ttf"
+    }
+    Component.onCompleted: {
+        // We will select our desired screen based on the wifi device state.
+        if ( guiStrings.GetCurrentWirelessStatus().length == 0 ) {
+            currentScreen = "onoff";
+        } else {
+            currentScreen = "wifidetails";
+        }
+    }
+
+    // Wifi Details Screen
+    WifiDetails {
+        id: wifi_details_screen;
+        visible: false;
+        work_done: false;
+        input_focus: false;
+    }
+
+    states: [
+        State {
+            name: "OpenWifiDetailsScreen";
+            when: currentScreen == "wifidetails" && wifi_details_screen.work_done === false;
+            StateChangeScript {
+                name: "WifiDetailsScreen";
+                script: openWifiDetailsScreen();
+            }
+        },
+        State {
+            name: "WifiDetailsScreenToMainScreen";
+            when: currentScreen == "wifidetails" && wifi_details_screen.work_done === true;
+            StateChangeScript {
+                name: "WifiDetailsScreenToMainScreen";
+                script: {
+                    comeBackFromWifiDetailsScreen();
+                }
+            }
+        }
+    ]
+    function openWifiDetailsScreen() {
+        wifi_details_screen.visible = true;
+        wifi_details_screen.input_focus = true;
+        wifi_details_screen.ssid = guiStrings.GetCurrentWirelessStatus();
+        wifi_details_screen.work_done = false;
+        wifi_details_screen.enableDisableOptionSelected = false;
+        wifi_details_screen.enableDisableCaption = guiStrings.txtDisable;
+    }
+    function comeBackFromWifiDetailsScreen() {
+        if ( wifi_details_screen.enableDisableOptionSelected ) {
+            // We are disabling current wireless Connections
+            guiStrings.Wifi(false);
+        }
+
+        guiBackend.ChangeCurrentPage("main");
+    }
+}

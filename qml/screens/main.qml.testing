@@ -1,0 +1,27 @@
+
+//import QtQuick 1.1
+import QtQuick 1.0
+
+Item {
+    id: main_screen
+    width: 1920;
+    height: 1080;
+
+    FontLoader {
+        id: lucida
+        source: "qrc:/lucida.ttf"
+    }
+//    WifiAuth {
+//        id: wifiAuthentication;
+//    }
+    CustomTextInput {
+        id: textInput;
+        visible: true;
+        input_focus: true;
+        title: "Wifi - Password";
+        input_type: "normal";
+    }
+}
+
+
+
